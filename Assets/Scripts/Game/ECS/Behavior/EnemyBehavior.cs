@@ -16,7 +16,7 @@ public class EnemyBehavior : MonoBehaviour
     /// <summary>
     /// Current speed of the Enemy.
     /// </summary>
-    public float speed = 1.0f;
+    public float speed = 0.1f;
 
     /// <summary>
     /// Enemy baker.

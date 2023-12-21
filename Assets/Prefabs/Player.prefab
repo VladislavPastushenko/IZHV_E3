@@ -538,7 +538,23 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a464e659-f1c1-4584-a512-ba25f1f7bdb9
     m_ActionName: UI/TrackedDeviceOrientation
-  m_NeverAutoSwitchControlSchemes: 1
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0a194c01-4602-4b06-8da3-70f515f9710d
+    m_ActionName: SecondPlayerControl/Look
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2acc6455-4b78-4fe4-a2ec-3602a6495a3d
+    m_ActionName: SecondPlayerControl/Move
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a6f66d7f-bada-4638-aed7-caaa18b0e6b7
+    m_ActionName: SecondPlayerControl/Fire
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6dc6edf9-89d3-4b5b-b0b9-a1255d88c903
+    m_ActionName: SecondPlayerControl/ToggleShotgun
+  m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerControl
   m_SplitScreenIndex: -1

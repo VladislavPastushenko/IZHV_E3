@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     /// <summary>
     /// Current speed of the Enemy.
     /// </summary>
-    public float speed = 1.0f;
+    public float speed = 0.1f;
     
     /// <summary>
     /// Rigid body of the Enemy.
@@ -74,6 +74,17 @@ public class Enemy : MonoBehaviour
          *    Use mRigidBody.MovePosition to move the enemy
          * Implement a simple AI, which will head towards the closest player and follow them.
          */
+        // Get the nearest player
+        var nearestPlayer = GameManager.Instance.NearestPlayer(transform.position);
+
+        if (nearestPlayer != null) {
+            var direction = nearestPlayer.transform.position - transform.position;
+            direction.z = 0;
+
+            transform.rotation = Quaternion.LookRotation(direction, Vector3.forward);
+
+            mRigidBody.MovePosition(transform.position + transform.forward * speed);
+        }
     }
 
     /// <summary>
